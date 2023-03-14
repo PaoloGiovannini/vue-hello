@@ -10,7 +10,16 @@
     <body>
         <div id="app">
             <h1>{{message}}</h1>
-            <img :src="picture" alt="foto casuale">
+            <button @click="cambiaDisplay">Fai scomparire e riapparire le foto</button>
+            <div>
+                <!-- foto con link -->
+                <img :class="display" :src="picture" alt="foto casuale">
+            </div>
+            <div>
+                <!-- foto da cartella img -->
+                <img :class="display" :src="picture_2" alt="">
+            </div>
+            
         </div>
 
         
